@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новый счет</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+
+    <div class="container-new-account-bank" id="test-container">
+        <div class="back-btn"><img src="static/images/back-icon.png" alt="изображение" class="back-icon"><a href="http://127.0.0.1:5000/bank-accounts" class="back-btn">Назад</a></div>
+        <div class="type-account" onclick="replaceContent()">Обычный счет</div>
+        <div class="type-account">Долговой счет</div>
+        <div class="type-account">Накопительный счет</div>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

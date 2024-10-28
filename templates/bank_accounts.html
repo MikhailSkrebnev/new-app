@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои счета</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    
+    <div class="bank_account_container">
+        <div class="back-btn"><img src="static/images/back-icon.png" alt="изображение" class="back-icon"><a href="http://127.0.0.1:5000" class="back-btn">Назад</a></div>
+        <div class="categories_text">Обычные счета</div>
+        <div class="list_bank_accounts">
+            <div class="account-info">
+                <span class="account_name">Т-Банк Деб.</span>
+                <span class="account_balance">299 ₽</span>
+            </div>
+            <div class="account-action">
+                <button class="account-btn"><img src="static/images/plus.png" alt="Изображение" class="btn-icon">Пополнить</button>
+                <button class="account-btn"><img src="static/images/Arrow-right.png" alt="Изображение" class="btn-icon">Перевести</button>
+                <button class="account-btn"><img src="static/images/wallet_icon.png" alt="Изображение" class="btn-icon">Оплатить</button>
+                <button class="account-btn"><img src="static/images/history-icon.png" alt="Изображение" class="btn-icon">История</button>
+            </div>
+        </div>
+        <div class="categories_text">Долговые счета</div>
+        <div class="list_debt_accounts">
+            <div class="account-info">
+                <span class="account_name">Т-Банк Кредитка</span>
+                <span class="account_balance">-1 299,56 ₽</span>
+            </div>
+            <div class="account-action">
+                <button class="account-btn"><img src="static/images/plus.png" alt="Изображение" class="btn-icon">Пополнить</button>
+                <button class="account-btn"><img src="static/images/Arrow-right.png" alt="Изображение" class="btn-icon">Перевести</button>
+                <button class="account-btn"><img src="static/images/wallet_icon.png" alt="Изображение" class="btn-icon">Оплатить</button>
+                <button class="account-btn"><img src="static/images/history-icon.png" alt="Изображение" class="btn-icon">История</button>
+            </div>
+        </div>
+        <div class="add_new_bank_account"><a class="add_new_bank_account" href="http://127.0.0.1:5000/new-bank-account">Новый счет</a></div>
+    </div>
+
+</body>
+</html>
